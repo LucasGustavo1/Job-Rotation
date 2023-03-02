@@ -1,0 +1,198 @@
+ /* Número  1 */
+#include <iostream>
+        using namespace std;
+        
+        int main() {
+            int i,indice,soma,k;
+            i;
+            indice=13;
+            soma=0;
+            k=0;
+            for(i=0;k<indice;i++){
+                k=k+1;
+                soma=soma+k;
+            }
+            cout<<"Valor de K :"<<k<<endl;
+            cout<<"Valor de soma :"<<soma;
+        
+            return 0;
+        }
+        
+        
+        
+        
+        /* Número 2*/
+        
+        #include <iostream>
+            using namespace std;
+            
+            int main()
+            {
+                int n,i,c;
+                bool encontrado = false;
+            
+                // Solicita ao usuário o número de termos da sequência
+                cout << "Digite o número de termos da sequência de Fibonacci que deseja calcular: ";
+                cin >> n;
+                
+                
+            
+                // Inicializa os primeiros dois termos
+                int a = 0, b = 1;
+            
+                // Imprime os primeiros dois termos
+                cout << a << " " << b << " ";
+            
+                // Loop para calcular e imprimir os próximos termos
+                for ( i = 2; i < n; i++) {
+                    c = a + b;
+                    cout << c << " ";
+                    a = b;
+                    b = c;
+                    if (c == n) {
+                        cout<<endl;
+                            cout << "O número " << n << " pertence à sequência de Fibonacci."<<endl;
+                            encontrado = true;
+                            break;
+                        
+                    }
+                }
+                if (!encontrado) {
+                    cout<<endl;
+                    cout << "O número " << n << " não pertence à sequência de Fibonacci."<<endl;
+                }
+                
+               
+                return 0;
+            }
+            
+            
+            /* Número 3 */ 
+            
+            
+            #include <iostream>
+                using namespace std;
+                
+                int main() {
+                    float faturamento[30],menorfaturamento,mediafaturamento,maiorfaturamento,soma,x,dias;
+                    
+                    
+                    for (int i = 0; i < 30; i++) {
+                        cout << "Digite o faturamento do dia " << dias+1<< ": ";
+                        cin >> faturamento[i];
+                        dias++;
+                    }
+                
+                    for (int i = 0; i < faturamento[i]; i++) 
+                    {
+                        soma+=faturamento[i];
+                        
+                        if(i==0)
+                        {
+                            menorfaturamento=faturamento[i];
+                             if (faturamento[i] <  menorfaturamento){
+                                menorfaturamento = faturamento[i];
+                            }
+                        
+                        }
+                        if(x==0)
+                            {
+                            maiorfaturamento=faturamento[i];
+                             if(faturamento[i] > maiorfaturamento){
+                                maiorfaturamento= faturamento[i];
+                            }
+                            
+                        }
+                       
+                       
+                    }
+                    for(int i =0;i<30;i++){
+                        if(faturamento[i]>mediafaturamento){
+                            x++;
+                        }
+                    }
+                    cout<<endl;
+                    cout<<" Menor faturamento "<<menorfaturamento;
+                    cout<<endl;
+                    cout<<" Maior faturamento "<<maiorfaturamento;
+                    cout<<endl;
+                    mediafaturamento = soma/10;
+                    cout<<"A média do faturamento é : "<<mediafaturamento;
+                    cout<<endl;
+                    cout<<"Dias que valores foram maiores que a média : "<<x<<endl;
+                    
+                
+                    return 0;
+                }
+                
+                
+                /* Número 4 */
+                
+                #include <iostream>
+                    using namespace std;
+                    
+                    int main() {
+                        double valor, total, percentual,sp,rj,mg,es,percentual1,percentual2,percentual3,outros;
+                        
+                        cout << "Insira o valor de SP: ";
+                        cin >> sp;
+                        
+                        cout << "Insira o valor de RJ: ";
+                        cin >> rj;
+                        
+                        cout << "Insira o valor de MG: ";
+                        cin >> mg;
+                        
+                        cout << "Insira o valor de ES: ";
+                        cin >> es;
+                        
+                        cout << "Insira o valor de ES: ";
+                        cin >> outros;
+                        
+                        total= sp+rj+mg+es+outros;
+                        cout << "Insira o total: "<<total;
+                        
+                        percentual = (sp / total) * 100;
+                        percentual1 = (rj / total) * 100;
+                        percentual2 = (mg / total) * 100;
+                        percentual3= (es / total) * 100;
+                        cout<<endl;
+                        
+                        cout << "O percentual SP é: " << percentual << "%" << endl;
+                        cout << "O percentual RJ é: " << percentual1 << "%" << endl;
+                        cout << "O percentual MG é: " << percentual2 << "%" << endl;
+                        cout << "O percentual ES é: " << percentual3 << "%" << endl;
+                        
+                        return 0;
+                    }
+                /* Número 5 */ 
+                
+                
+                #include <iostream>
+                        #include <string>
+                        
+                        using namespace std;
+                        
+                        int main()
+                        {
+                            string original, invertida;
+                        
+                            cout << "Digite uma string: ";
+                            getline(cin, original);
+                        
+                            // Inverte a string
+                            for(int i = original.length()-1; i >= 0; i--)
+                            {
+                                invertida += original[i];
+                            }
+                        
+                            cout << "A string invertida é: " << invertida << endl;
+                        
+                            return 0;
+                        }
+                
+                
+                
+                
+                
+                
